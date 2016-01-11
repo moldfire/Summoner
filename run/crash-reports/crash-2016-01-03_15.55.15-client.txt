@@ -1,0 +1,111 @@
+---- Minecraft Crash Report ----
+// Ouch. That hurt :(
+
+Time: 03/01/16 15:55
+Description: Unexpected error
+
+java.lang.IllegalArgumentException: Cannot set property PropertyBool{name=core, clazz=class java.lang.Boolean, values=[true, false]} as it does not exist in BlockState{block=mfs:alterStabiliser, properties=[]}
+	at net.minecraft.block.state.BlockState$StateImplementation.withProperty(BlockState.java:189)
+	at com.moldfire.mfsummoner.blocks.BlockAlterStabiliser.onBlockPlaced(BlockAlterStabiliser.java:39)
+	at net.minecraft.item.ItemBlock.onItemUse(ItemBlock.java:73)
+	at net.minecraft.item.ItemStack.onItemUse(ItemStack.java:147)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.func_178890_a(PlayerControllerMP.java:442)
+	at net.minecraft.client.Minecraft.rightClickMouse(Minecraft.java:1572)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:2132)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1088)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:376)
+	at net.minecraft.client.main.Main.main(Main.java:117)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at net.minecraft.block.state.BlockState$StateImplementation.withProperty(BlockState.java:189)
+	at com.moldfire.mfsummoner.blocks.BlockAlterStabiliser.onBlockPlaced(BlockAlterStabiliser.java:39)
+	at net.minecraft.item.ItemBlock.onItemUse(ItemBlock.java:73)
+	at net.minecraft.item.ItemStack.onItemUse(ItemStack.java:147)
+	at net.minecraft.client.multiplayer.PlayerControllerMP.func_178890_a(PlayerControllerMP.java:442)
+	at net.minecraft.client.Minecraft.rightClickMouse(Minecraft.java:1572)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player218'/298, l='MpServer', x=175.02, y=69.50, z=244.13]]
+	Chunk stats: MultiplayerChunkCache: 607, 607
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: 176.00,64.00,248.00 - World: (176,64,248), Chunk: (at 0,4,8 in 11,15; contains blocks 176,0,240 to 191,255,255), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 159632 game time, 142326 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 53 total; [EntityRabbit['Rabbit'/139, l='MpServer', x=159.41, y=72.00, z=193.59], EntityBat['Bat'/141, l='MpServer', x=146.50, y=27.48, z=310.13], EntityRabbit['Rabbit'/140, l='MpServer', x=144.22, y=70.00, z=277.31], EntityBat['Bat'/143, l='MpServer', x=152.54, y=30.94, z=320.45], EntityBat['Bat'/142, l='MpServer', x=146.75, y=32.10, z=301.25], EntityRabbit['Rabbit'/155, l='MpServer', x=161.10, y=69.25, z=228.93], EntityRabbit['Rabbit'/156, l='MpServer', x=169.72, y=69.00, z=275.13], EntityRabbit['Rabbit'/157, l='MpServer', x=159.78, y=70.00, z=285.88], EntityBat['Bat'/145, l='MpServer', x=158.19, y=19.10, z=323.63], EntityBat['Bat'/147, l='MpServer', x=153.78, y=18.03, z=321.32], EntityRabbit['Rabbit'/171, l='MpServer', x=180.97, y=71.00, z=318.94], EntityBat['Bat'/170, l='MpServer', x=176.56, y=44.10, z=311.75], EntityRabbit['Rabbit'/169, l='MpServer', x=188.19, y=68.25, z=286.64], EntityRabbit['Rabbit'/161, l='MpServer', x=171.38, y=71.00, z=323.78], EntityCow['Cow'/184, l='MpServer', x=223.75, y=67.00, z=253.78], EntityRabbit['Rabbit'/185, l='MpServer', x=217.00, y=67.00, z=256.81], EntityCow['Cow'/190, l='MpServer', x=229.84, y=70.00, z=208.16], EntityRabbit['Rabbit'/191, l='MpServer', x=237.53, y=70.00, z=210.00], EntityRabbit['Rabbit'/178, l='MpServer', x=195.41, y=71.00, z=193.31], EntityRabbit['Rabbit'/182, l='MpServer', x=214.47, y=71.00, z=236.88], EntityRabbit['Rabbit'/183, l='MpServer', x=214.56, y=70.00, z=247.91], EntityRabbit['Rabbit'/180, l='MpServer', x=221.22, y=71.00, z=185.13], EntityCow['Cow'/181, l='MpServer', x=222.53, y=70.00, z=208.22], EntityRabbit['Rabbit'/71, l='MpServer', x=117.94, y=69.00, z=223.00], EntityCow['Cow'/76, l='MpServer', x=96.34, y=67.00, z=317.38], EntityBat['Bat'/77, l='MpServer', x=119.75, y=29.94, z=314.25], EntityRabbit['Rabbit'/196, l='MpServer', x=228.16, y=73.00, z=296.75], EntityCow['Cow'/193, l='MpServer', x=230.94, y=69.00, z=226.94], EntityRabbit['Rabbit'/72, l='MpServer', x=111.22, y=70.00, z=242.34], EntityItem['item.item.dyePowder.black'/192, l='MpServer', x=232.84, y=49.00, z=232.47], EntityRabbit['Rabbit'/195, l='MpServer', x=238.84, y=68.00, z=250.09], EntityChicken['Chicken'/74, l='MpServer', x=98.63, y=70.00, z=271.34], EntityRabbit['Rabbit'/194, l='MpServer', x=235.41, y=69.00, z=227.56], EntityPlayerSP['Player218'/298, l='MpServer', x=175.02, y=69.50, z=244.13], EntityItem['item.item.dyePowder.black'/102, l='MpServer', x=124.94, y=29.00, z=290.41], EntityRabbit['Rabbit'/103, l='MpServer', x=122.09, y=69.00, z=300.56], EntityRabbit['Rabbit'/100, l='MpServer', x=122.16, y=71.00, z=271.53], EntityBat['Bat'/101, l='MpServer', x=129.01, y=29.26, z=289.95], EntityRabbit['Rabbit'/98, l='MpServer', x=106.56, y=71.38, z=237.07], EntityRabbit['Rabbit'/99, l='MpServer', x=110.25, y=70.00, z=276.53], EntityRabbit['Rabbit'/96, l='MpServer', x=124.28, y=69.00, z=214.19], EntityRabbit['Rabbit'/97, l='MpServer', x=110.88, y=70.00, z=235.56], EntityRabbit['Rabbit'/104, l='MpServer', x=119.25, y=70.00, z=290.31], EntityRabbit['Rabbit'/105, l='MpServer', x=118.09, y=70.00, z=293.56], EntityRabbit['Rabbit'/119, l='MpServer', x=129.75, y=69.00, z=223.53], EntityRabbit['Rabbit'/127, l='MpServer', x=142.78, y=70.00, z=295.22], EntityBat['Bat'/126, l='MpServer', x=142.19, y=51.10, z=294.28], EntityRabbit['Rabbit'/125, l='MpServer', x=138.63, y=70.00, z=292.88], EntityRabbit['Rabbit'/124, l='MpServer', x=133.66, y=68.00, z=244.56], EntityRabbit['Rabbit'/123, l='MpServer', x=130.59, y=68.00, z=261.78], EntitySheep['Sheep'/122, l='MpServer', x=131.16, y=69.00, z=241.09], EntityRabbit['Rabbit'/121, l='MpServer', x=141.28, y=68.00, z=225.25], EntityRabbit['Rabbit'/120, l='MpServer', x=131.59, y=68.00, z=225.41]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:392)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2615)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:405)
+	at net.minecraft.client.main.Main.main(Main.java:117)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8
+	Operating System: Windows 8.1 (amd64) version 6.3
+	Java Version: 1.7.0_79, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 394333976 bytes (376 MB) / 889192448 bytes (848 MB) up to 1884815360 bytes (1797 MB)
+	JVM Flags: 0 total; 
+	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 94
+	FML: MCP v9.10 FML v8.0.99.99 Minecraft Forge 11.14.4.1563 4 mods loaded, 4 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{8.0.99.99} [Forge Mod Loader] (forgeSrc-1.8-11.14.4.1563.jar) 
+	UCHIJAAAA	Forge{11.14.4.1563} [Minecraft Forge] (forgeSrc-1.8-11.14.4.1563.jar) 
+	UCHIJAAAA	mfs{1.8.0-1.0} [Summoner] (bin) 
+	Loaded coremods (and transformers): 
+	GL info: ' Vendor: 'Intel' Version: '4.3.0 - Build 10.18.15.4256' Renderer: 'Intel(R) HD Graphics 4400'
+	Launched Version: 1.8
+	LWJGL: 2.9.1
+	OpenGL: Intel(R) HD Graphics 4400 GL version 4.3.0 - Build 10.18.15.4256, Intel
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: No
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)

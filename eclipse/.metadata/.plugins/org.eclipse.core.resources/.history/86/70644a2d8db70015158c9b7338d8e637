@@ -1,0 +1,7 @@
+package com.moldfire.mfsummoner.blocks;
+
+public class BlockSlabMFS extends BlockMFS
+{
+
+	
+}

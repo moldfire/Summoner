@@ -1,0 +1,16 @@
+[
+{
+  "modid": "mfs",
+  "name": "Summoner",
+  "description": "",
+  "version": "1.8.0-1.0",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["moldfire"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

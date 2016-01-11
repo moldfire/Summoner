@@ -1,0 +1,5 @@
+package com.moldfire.mfsummoner.blocks;
+
+public class BlockObsidianSlab {
+
+}

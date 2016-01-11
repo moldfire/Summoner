@@ -1,0 +1,17 @@
+package com.moldfire.mfsummoner.proxy;
+
+import net.minecraftforge.fml.common.registry.GameRegistry;
+
+import com.moldfire.mfsummoner.tileentity.TileEntityStabiliser;
+
+
+public class CommonProxy 
+{
+	public void registerRenders(){
+	}
+	
+	public void registerTileEntitys()
+	{
+		GameRegistry.registerTileEntity(TileEntityStabiliser.class, TileEntityStabiliser.name);
+	}
+}

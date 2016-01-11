@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
+<fullyQualifiedTypeName name="net.minecraft.util.EnumParticleTypes"/>
+<fullyQualifiedTypeName name="java.lang.Boolean"/>
+<fullyQualifiedTypeName name="com.moldfire.mfsummoner.blocks.BlockAlterStabiliser"/>
+<fullyQualifiedTypeName name="com.moldfire.mfsummoner.blocks.BlockAlterStabiliser.EnumShape"/>
+<fullyQualifiedTypeName name="net.minecraftforge.fml.common.FMLLog"/>
+<fullyQualifiedTypeName name="com.moldfire.mfsummoner.reference.Reference"/>
+<fullyQualifiedTypeName name="org.apache.logging.log4j.Level"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="net.minecraft.init.Blocks"/>
+<fullyQualifiedTypeName name="com.moldfire.mfsummoner.init.ModBlocks"/>
+</qualifiedTypeNameHistroy>
