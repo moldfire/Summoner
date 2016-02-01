@@ -6,6 +6,7 @@ tile.mfs:obsidianSlab.name=Obsidian Slab
 item.mfs:summoningStone.name=Summoning Stone
 item.mfs:bindingGem.name=Binding Gem
 item.mfs:gemDust.name=Gem Dust
+item.mfs:summoningBook.name=Summoners Book
 
 #Achievements
 achievement.BindingGem=Imperfections
