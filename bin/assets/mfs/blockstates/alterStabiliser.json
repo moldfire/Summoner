@@ -1,6 +1,0 @@
-{
-	"variants": {
-		"shape=outer": { "model": "mfs:alterStabiliserOuter" },
-		"shape=inner": { "model": "mfs:alterStabiliserInner" }
-	}
-}

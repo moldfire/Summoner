@@ -1,7 +1,0 @@
-{
-    "variants": {
-	"normal": { "model": "mfs:half_slab_obsidian" },
-        "half=bottom": { "model": "half_slab_obsidian" },
-        "half=top": { "model": "upper_slab_obsidian" }
-    }
-}
