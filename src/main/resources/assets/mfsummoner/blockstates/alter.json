@@ -1,0 +1,7 @@
+{
+	"variants": {
+		
+		"state=unactivated": { "model": "mfSummoner:alterUnactivated" },
+		"state=activated": { "model": "mfSummoner:alterActivated" }
+	}
+}

@@ -1,9 +1,10 @@
 package com.moldfire.summoner.init;
 
-import com.moldfire.summoner.blocks.BlockAlterStabiliser;
+import com.moldfire.summoner.blocks.BlockAlterPlinth;
+import com.moldfire.summoner.blocks.BlockContainerMFS;
 import com.moldfire.summoner.blocks.BlockMFS;
-import com.moldfire.summoner.blocks.BlockObsidianSlab;
-import com.moldfire.summoner.blocks.BlockSlabMFS;
+import com.moldfire.summoner.blocks.BlockMFSAlter;
+import com.moldfire.summoner.blocks.BlockMFSOreLifestone;
 import com.moldfire.summoner.blocks.BlockWorldFracture;
 
 import net.minecraft.block.Block;
@@ -15,20 +16,37 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModBlocks 
 {
-	public static final BlockMFS alterStabiliser = new BlockAlterStabiliser("alterStabiliser", Material.rock, 50.5F, false);
-	public static final BlockSlabMFS obsidianSlab = new BlockObsidianSlab("obsidianSlab", Material.rock, 50.0F, true);
-	public static final BlockWorldFracture worldFracture = new BlockWorldFracture("worldFracture", Material.glass, 25.0F, true);
+	//WorldGen - Ores
+	public static final BlockMFS oreLifestone = new BlockMFSOreLifestone("oreLifestone", Material.rock, 3.0F, true);
+	
+	//WorldGen - Misc
+	public static final BlockMFS worldFracture = new BlockWorldFracture("worldFracture", Material.glass, 25.0F, false);
+	
+	//Blocks
+	public static final BlockMFS alter = new BlockMFSAlter("alter", Material.glass, 50.0f, true);
+	public static final BlockContainerMFS alterBasin = new BlockAlterPlinth("alterBasin", Material.rock, 10.0F, true);
 	
 	public static void init()
 	{
-		registerItem(alterStabiliser);
-		registerItem(obsidianSlab);
+		//WorldGen - Ores
+		registerItem(oreLifestone);
+		
+		//WorldGen - Misc
 		registerItem(worldFracture);
+		
+		//Blocks
+		registerItem(alter);
+		registerItem(alterBasin);
 	}
 	
 	public static void registerRenders()
 	{
-		registerRender(obsidianSlab);
+		//WorldGen - Ores
+		registerRender(oreLifestone);
+		
+		//Blocks
+		registerRender(alter);
+		registerRender(alterBasin);
 	}
 	
 	private static void registerItem(Block block)

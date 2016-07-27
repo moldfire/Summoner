@@ -1,7 +1,7 @@
 {
     "variants": {
-	"normal": { "model": "mfs:half_slab_obsidian" },
-        "half=bottom": { "model": "half_slab_obsidian" },
-        "half=top": { "model": "upper_slab_obsidian" }
+	"normal": { "model": "mfSummoner:half_slab_obsidian" },
+        "half=bottom": { "model": "mfSummoner:half_slab_obsidian" },
+        "half=top": { "model": "mfSummoner:half_slab_obsidian" }
     }
 }

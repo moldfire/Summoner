@@ -1,6 +1,6 @@
 package com.moldfire.summoner.container;
 
-import com.moldfire.summoner.tileentity.TileEntityCoreStabiliser;
+import com.moldfire.summoner.tileentity.TileEntityAlter;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
@@ -10,7 +10,7 @@ import net.minecraft.item.ItemStack;
 
 public class ContainerAlter extends Container 
 {
-	private TileEntityCoreStabiliser tileEntityAlter;
+	private TileEntityAlter tileEntityAlter;
 	
 	//Players Inventory
 	private final int HOTBAR_SLOT_COUNT = 9;
@@ -21,7 +21,7 @@ public class ContainerAlter extends Container
 	
 	private final int TE_SLOT_INDEX = VANILLA_SLOT_COUNT;
 	
-	public ContainerAlter(InventoryPlayer invPlayer, TileEntityCoreStabiliser tileEntityAlter)
+	public ContainerAlter(InventoryPlayer invPlayer, TileEntityAlter tileEntityAlter)
 	{
 		this.tileEntityAlter = tileEntityAlter;
 		

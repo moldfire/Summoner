@@ -20,12 +20,12 @@ plugins {
     id "net.minecraftforge.gradle.forge" version "2.0.2"
 }
 */
-version = "1.0"
-group= "com.yourname.modid" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "modid"
+version = "1.8.9 - 0.1"
+group= "com.moldfire.mfs" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "mfs"
 
 minecraft {
-    version = "1.8.9-11.15.1.1722"
+    version = "1.8.9-11.15.1.1902-1.8.9"
     runDir = "run"
     
     // the mappings can be changed at any time, and must be in the following format.

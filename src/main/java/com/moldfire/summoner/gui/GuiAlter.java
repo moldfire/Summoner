@@ -11,7 +11,7 @@ import net.minecraft.world.World;
 
 import com.moldfire.summoner.container.ContainerAlter;
 import com.moldfire.summoner.reference.Reference;
-import com.moldfire.summoner.tileentity.TileEntityCoreStabiliser;
+import com.moldfire.summoner.tileentity.TileEntityAlter;
 
 public class GuiAlter extends GuiContainer
 {
@@ -20,9 +20,9 @@ public class GuiAlter extends GuiContainer
 	private World world;
 	private int xSize, ySize;
 	private ResourceLocation backgroundImage = new ResourceLocation(Reference.MOD_ID+":"+ "textures/guis/guiAlter.png");
-	private TileEntityCoreStabiliser tileEntityAlter;
+	private TileEntityAlter tileEntityAlter;
  
-	public GuiAlter(InventoryPlayer invPlayer, TileEntityCoreStabiliser tile)
+	public GuiAlter(InventoryPlayer invPlayer, TileEntityAlter tile)
 	{
 		super(new ContainerAlter(invPlayer, tile));
 		tileEntityAlter = tile;

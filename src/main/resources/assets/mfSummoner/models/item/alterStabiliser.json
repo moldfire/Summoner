@@ -1,5 +1,5 @@
 {
-	"parent": "mfs:block/alterStabiliser",
+	"parent": "mfSummoner:block/alterStabiliser",
 	"display": {
 		"thirdperson": {
 			"rotation": [ 10, -45, 170 ],

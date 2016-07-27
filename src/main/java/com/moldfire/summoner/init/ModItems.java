@@ -1,10 +1,11 @@
 package com.moldfire.summoner.init;
 
-import com.moldfire.summoner.items.ItemBindingGem;
-import com.moldfire.summoner.items.ItemGemDust;
 import com.moldfire.summoner.items.ItemMFS;
+import com.moldfire.summoner.items.ItemMFSBindingStone;
+import com.moldfire.summoner.items.ItemMFSDebug;
+import com.moldfire.summoner.items.ItemMFSLifestoneShard;
+import com.moldfire.summoner.items.ItemMFSSummoningStone;
 import com.moldfire.summoner.items.ItemSummoningBook;
-import com.moldfire.summoner.items.ItemSummoningStone;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemMeshDefinition;
@@ -15,26 +16,29 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModItems 
 {
-	public static final ItemMFS summoningStone = new ItemSummoningStone("summoningStone", 1, true);
-	public static final ItemMFS bindingGem = new ItemBindingGem("bindingGem", 1, true);
+	public static final ItemMFS debugItem = new ItemMFSDebug("debugItem", 1, true);
+	public static final ItemMFS summoningStone = new ItemMFSSummoningStone("summoningStone", 1, true);
 	public static final ItemMFS summoningBook = new ItemSummoningBook("summoningBook", 1, true);
-	public static final ItemMFS gemDust = new ItemGemDust("gemDust", 64, true);
+	public static final ItemMFS lifestoneShard = new ItemMFSLifestoneShard("lifestoneShard", 1, true);
+	public static final ItemMFS bindingStone = new ItemMFSBindingStone("bindingStone", 1, true);
 	
 	
 	public static void init()
 	{
+		registerItem(debugItem);
 		registerItem(summoningStone);
-		registerItem(bindingGem);
 		registerItem(summoningBook);
-		registerItem(gemDust);
+		registerItem(lifestoneShard);
+		registerItem(bindingStone);
 	}
 	
 	public static void registerRenders()
 	{
+		registerRender(debugItem);
 		registerRender(summoningStone);
-		registerRenderWOMeta(bindingGem);
-		registerRender(gemDust);
 		registerRender(summoningBook);
+		registerRenderWOMeta(lifestoneShard);
+		registerRender(bindingStone);
 	}
 	
 	private static void registerItem(Item item)

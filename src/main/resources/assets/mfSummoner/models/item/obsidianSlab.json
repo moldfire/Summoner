@@ -1,5 +1,5 @@
 {
-	"parent": "mfs:block/half_slab_obsidian",
+	"parent": "mfSummoner:block/half_slab_obsidian",
 	"display": {
 		"thirdperson": {
 			"rotation": [ 10, -45, 170 ],

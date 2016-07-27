@@ -1,12 +1,19 @@
 #Blocks
-tile.mfs:alterStabiliser.name=Alter Stabiliser
-tile.mfs:obsidianSlab.name=Obsidian Slab
+tile.mfSummoner:alter.name=Summoners Alter
+tile.mfSummoner:alterBasin.name=Plinth
+tile.mfSummoner:obsidianSlab.name=Obsidian Slab
+tile.mfSummoner:oreLifestone.name=Lifestone
 
 #Items
-item.mfs:summoningStone.name=Summoning Stone
-item.mfs:bindingGem.name=Binding Gem
-item.mfs:gemDust.name=Gem Dust
-item.mfs:summoningBook.name=Summoners Book
+item.mfSummoner:summoningStone.name=Summoning Stone
+item.mfSummoner:bindingStone.name=Binding Stone
+item.mfSummoner:summoningBook.name=Summoners Book
+item.mfSummoner:lifestoneShard.name=Lifestone Shard
+item.mfSummoner:debugItem.name=Debug Item
+
+#Entitys
+entity.mfSummoner.Imp.name=Imp
+entity.mfSummoner.Kelpie.name=Kelpie
 
 #Achievements
 achievement.BindingGem=Imperfections

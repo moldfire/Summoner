@@ -1,3 +1,6 @@
 {
-    "capture": {"category": "master","sounds": [{"name": "capture","stream": false},]}
+"mob.imp.say":{
+"sounds":[{"name":"mob/imp/say","stream":true}],"category":"hostile"},
+"mob.imp.hurt":{
+"sounds":[{"name":"mob/imp/hurt","stream":true}],"category":"neutral"}
 }

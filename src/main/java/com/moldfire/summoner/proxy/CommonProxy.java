@@ -1,8 +1,9 @@
 package com.moldfire.summoner.proxy;
 
-import com.moldfire.summoner.tileentity.TileEntityCoreStabiliser;
-
 import net.minecraftforge.fml.common.registry.GameRegistry;
+
+import com.moldfire.summoner.tileentity.TileEntityAlter;
+import com.moldfire.summoner.tileentity.TileEntityPlinth;
 
 
 public class CommonProxy 
@@ -12,6 +13,7 @@ public class CommonProxy
 	
 	public void registerTileEntitys()
 	{
-		GameRegistry.registerTileEntity(TileEntityCoreStabiliser.class, TileEntityCoreStabiliser.name);
+		GameRegistry.registerTileEntity(TileEntityAlter.class, TileEntityAlter.name);
+		GameRegistry.registerTileEntity(TileEntityPlinth.class, TileEntityPlinth.name);
 	}
 }
